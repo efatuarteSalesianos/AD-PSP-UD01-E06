@@ -21,6 +21,6 @@ public class Profesor implements Serializable {
     private String email;
     private Double puntuacion;
 
-    @OneToMany(mappedBy = "profesor")
+    @OneToMany(mappedBy = "profesor", fetch = FetchType.EAGER)
     private List<CursoOnline> cursos = new ArrayList<>();
 }
