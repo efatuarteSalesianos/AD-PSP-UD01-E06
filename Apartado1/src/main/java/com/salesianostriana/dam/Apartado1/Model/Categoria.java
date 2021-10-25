@@ -17,10 +17,12 @@ public class Categoria implements Serializable {
 
     private String nombre;
 
+    // En este caso es mejor que sea unidireccional, por lo que este atributo no existiría
     @OneToMany (mappedBy = "categoria")
     private List<Producto> productos;
 
-    @OneToMany(mappedBy = "categoriaPadre", cascade = CascadeType.ALL)
+    // Mejor poner un cascade solo para el borrado
+    @OneToMany(mappedBy = "categoriaPadre", cascade = CascadeType.REMOVE)
     private List<Categoria> subCategorias;
 
     @ManyToOne
