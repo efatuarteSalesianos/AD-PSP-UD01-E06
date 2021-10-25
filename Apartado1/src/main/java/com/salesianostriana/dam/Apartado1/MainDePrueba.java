@@ -74,6 +74,5 @@ public class MainDePrueba {
         System.out.printf("%s, %s\n", vino.getNombre(), vino.getCategoria().getNombre());
         System.out.printf("%s, %s\n", cerveza.getNombre(), cerveza.getCategoria().getNombre());
         System.out.println("N de bebidas:" + bebidas.getProductos().size());
-        System.out.println(bebidas);
     }
 }

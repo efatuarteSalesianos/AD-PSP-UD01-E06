@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor
-@Getter @Setter @ToString
+@Getter @Setter
 @Builder(toBuilder = true)
 public class Producto implements Serializable {
 

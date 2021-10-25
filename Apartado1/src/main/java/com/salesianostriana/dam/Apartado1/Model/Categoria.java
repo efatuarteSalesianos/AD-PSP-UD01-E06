@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor
-@Getter @Setter @ToString
+@Getter @Setter
 @Builder(toBuilder = true)
 public class Categoria implements Serializable {
 
