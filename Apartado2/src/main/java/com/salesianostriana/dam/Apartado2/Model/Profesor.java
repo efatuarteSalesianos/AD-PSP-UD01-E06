@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor
-@Getter @Setter @ToString
+@Getter @Setter
 @Builder
 public class Profesor implements Serializable {
 

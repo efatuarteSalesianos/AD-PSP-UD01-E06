@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor
-@Getter @Setter @ToString
+@Getter @Setter
 @Builder
 public class CursoOnline implements Serializable {
 
@@ -23,7 +23,7 @@ public class CursoOnline implements Serializable {
     @ManyToOne
     private Profesor profesor;
 
-    @OneToMany(mappedBy = "curso", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "curso", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Video> videos = new ArrayList<>();
 
     /* MÉTODOS HELPERS */

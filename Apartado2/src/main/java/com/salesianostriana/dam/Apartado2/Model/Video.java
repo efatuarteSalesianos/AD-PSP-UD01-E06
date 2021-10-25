@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 @Entity
 @NoArgsConstructor @AllArgsConstructor
-@Getter @Setter @ToString
+@Getter @Setter
 @Builder
 public class Video implements Serializable {
 
